@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Express App</title>
+</head>
+<body>
+<div class="container" style="padding-top: 50px;">
+    <div class="row">
+        <div class="col s12 m8 offset-m2 16 offset-l2" id="posts">
+        </div>
+    </div>
+</div>
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red modal-trigger" data-target="createForm">
+        <i class="large material-icons">add</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+</div>
+<div id="createForm" class="modal">
+    <div class="modal-content">
+        <h4>Create new post</h4>
+        <div class="input-field">
+            <input id="title" type="text">
+            <label for="title">Title</label>
+        </div>
+        <div class="input-field">
+            <textarea id="text" class="materialize-textarea"></textarea>
+            <label for="text">Text</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="waves-effect waves-light btn" id="createPost" referrerpolicy="origin">Create post</a>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
