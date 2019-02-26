@@ -6,7 +6,7 @@ const path = require('path'); // модуль для работы с путям�
 const postRouter = require('./routes/post'); // создание экземпляра роутера
 const port = process.env.PORT || 3000; // порт из окружения, если не задан, 3000
 const clientPath = path.join(__dirname, 'client'); // текущая директория + папка client
-mongoose.connect(keys.mongoURI) // коннект к бд
+mongoose.connect(keys.mongoURI) //  коннект к бд
     .then(() => console.log('MongoDB connected'))
     .catch((err) => console.log(err));
 const app = express(); // создание эеземпляра приложения
